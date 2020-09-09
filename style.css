@@ -6,21 +6,52 @@
 
 html,
 body,
-.wrapper {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+.container {
+  background-color: green;
+  padding: 3rem;
+  border-radius: 1rem;
+  border:2px solid white; 
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
 }
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #333;
+  margin: 0;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-.wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+.form {
+ display: grid; 
+ grid-template-columns: auto auto;
+ row-gap: 1rem;
+ column-gap: 3rem;
+ justify-content: center;
+ align-items: center;
+}
+
+.character-amount-container {
+  display: flex;
+  align-items: center;
+}
+
+.password-display {
+  background-color: white;
+  color: black;
+  padding:1rem;
+  border:1px solid#3333;
+  height: 2rem;
+  width: 350px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
 }
 
 header {
@@ -73,9 +104,9 @@ header {
 }
 
 .btn {
-  border: none;
-  background-color: hsl(360, 91%, 36%);
-  border-radius: 25px;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
   color: hsl(0, 0%, 100%);
